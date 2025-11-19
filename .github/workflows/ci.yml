@@ -31,7 +31,7 @@ jobs:
       - name: Checkout Manifests Repo
         uses: actions/checkout@v3
         with:
-          repository: YOUR_GITHUB_USERNAME/nodejs-gitops-manifests
+          repository: vaibDan/nodejs-gitops-manifests
           token: ${{ secrets.GIT_PAT }} 
 
       - name: Update Kubernetes Manifest
