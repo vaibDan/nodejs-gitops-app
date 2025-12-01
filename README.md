@@ -18,7 +18,13 @@ This project utilizes a two-repository GitOps model to separate application conc
 *   **Application Repository (this one):** Contains application code, Dockerfile, and the CI pipeline.
 *   **[Manifests Repository](https://github.com/vaibDan/nodejs-gitops-manifests):** Contains the Kubernetes YAML manifests that define the desired state of the application in the cluster. It is the single source of truth for deployments.
 
+## Argo CD: The GitOps Control Plane
 
+Argo CD serves as the control plane for our deployment. It continuously monitors the manifests repository and ensures that the live state of the application in the Kubernetes cluster matches the desired state defined in the Helm chart.
+
+The dashboard below provides a live, real-time visualization of the application's health and sync status.
+
+![Argo CD Dashboard](./argocd-dashboard.png)
 
 ## The CI/CD Workflow
 

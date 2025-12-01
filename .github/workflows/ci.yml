@@ -3,6 +3,11 @@ name: CI - Build and Push Docker Image
 on:
   push:
     branches: [ "main" ]
+    paths: 
+      - 'app.js'
+      - 'package*.json'
+      - '.github/workflows/ci.yml'
+      - 'Dockerfile'
 
 jobs:
   build-and-push:
