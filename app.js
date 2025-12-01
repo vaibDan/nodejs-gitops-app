@@ -3,7 +3,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', (req, res) => {
-    res.send('Hello, GitOps World! This Pipeline is fully automated Version 2.0.0');
+    res.send('Hello, GitOps World! This Pipeline is fully automated Version 3.0.0. This version will be reverted in the next commit.');
 });
 
 app.listen(port, () => {
